@@ -1,0 +1,1 @@
+MONGODB_URI: mongodb://heroku_7xk070k5:tegnor3045pf5arr74o1uiabr3@ds135700.mlab.com:35700/heroku_7xk070k5
