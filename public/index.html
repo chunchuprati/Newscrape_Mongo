@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NewsScraper Mongo</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- MDB Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="assets/css/mdb.min.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+   
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mongo Scraper</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" id="lnkSavedArticles" href="saveArticle.html">Saved Articles</a> -->
+                        <a class="nav-link" id="lnkSavedArticles" href="#">Saved Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" id="btnScrapeNewArticles" class="btn btn-danger" data-toggle="modal" data-target="#basicExample">Scrape New Articles!</button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--/.Navbar-->
+    <!--Mask-->
+    <div class="view hm-black-light">
+        <div class="full-bg-img flex-center">
+            <ul class="animated fadeInUp">
+                <li>
+                    <h1 class="h1-responsive font-bold"><b><i>Mongo News Scraper</i></b></h1>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.Mask-->
+
+    <!-- News Article Panels -->
+
+    <div class="row">
+        <div class="col-md-12 scrapedArticles">
+            <!-- {{{body}}} -->
+            <!--Panel-->
+            <!-- <div class="card"> -->
+                <!-- <h3 class="card-header mdb-color lighten-2  white-text"><a id="article"></a> Heading
+                    <a class="btn btn-success">SAVE ARTICLE</a>
+
+                </h3>
+                <div class="card-body">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div> -->
+                
+            <!-- </div> -->
+            <!--/.Panel-->
+        </div>
+    </div>
+
+    <!-- Modal to display number of articles scraped -->
+    <div class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h3></h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer links-->
+        <div class="container-fluid">
+            <div class="row">
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>GitHub</strong></h5>
+                    <a href="https://github.com/chunchuprati/Newscrape_Mongo" class="color">News Scraper</a>
+
+                </div>
+                <!--/.First column-->
+                <hr class="w-100 clearfix d-sm-none">
+                <!--Second column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>LinkedIn</strong></h5>
+                    <a href="https://www.linkedin.com/feed/" class="color">Profile</a>
+
+                </div>
+                <!--/.Second column-->
+                <hr class="w-100 clearfix d-sm-none">
+                <!--Third column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title mb-3"><strong>StackOverflow</strong></h5>
+                    <a href="https://stackoverflow.com/" class="color">Stack</a>
+
+                </div>
+                <!--/.Third column-->
+                <hr class="w-100 clearfix d-sm-none">
+                <!--Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer links-->
+
+        <hr>
+
+
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: Mongo News Scraper
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <!--  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script type = "text/javascript" src="assets/js/app.js"></script>
+    <script type = "text/javascript">  
+        // $('#btnScrapeNewArticles').on("click", function() {
+        //     alert("button is clicked!");
+        // })
+    </script>
+
+</body>
+
+</html>

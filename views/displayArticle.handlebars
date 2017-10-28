@@ -1,0 +1,12 @@
+{{{#each article}}} 
+<div class="card">
+    <h3 class="card-header primary-color lighten-2  white-text h3.responsive">
+        <a id="article" class="white-text" href="{{{link}}}">{{{heading}}}</a>
+        <a class="btn btn-success float-right save" 
+            data-value = "{{{heading}}} + "|" + {{{summary}}} + "|" + {{{imageURL}}} + "|" + {{{by}}} + "|" + {{{link}}}">SAVE ARTICLE
+        </a>
+    </h3>
+        <div class="card-body">
+            <p class="card-text black-text">{{{summary}}}</p>
+        </div>
+</div>
